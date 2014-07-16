@@ -10,7 +10,7 @@ world_cup_news
 
 # enter your solutions inside the methods
 def goal(message)
-
+  message * 2
 end
 
 def generate_an_array_of_teams(teams)
@@ -47,4 +47,3 @@ check("block_string_to_single_line method",
       block_string_to_single_line(long_string) == "Clint Dempsey put the U.S. ahead in the first minute of its World Cup opener." )
 check("capitalize_every_third_word method",
       capitalize_every_third_word(long_string) == "Clint dempsey put The u.s. ahead In the first Minute of its World cup opener." )
-
