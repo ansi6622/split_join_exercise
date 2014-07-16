@@ -26,7 +26,7 @@ def return_australia(teams)
 end
 
 def starts_with_C(teams)
-
+  generate_an_array_of_teams(teams).select { |t| t[0] == 'C' }
 end
 
 def block_string_to_single_line(block_string)
