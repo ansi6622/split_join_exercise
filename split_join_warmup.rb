@@ -30,7 +30,7 @@ def starts_with_C(teams)
 end
 
 def block_string_to_single_line(block_string)
-
+  block_string.gsub(/\n|,/, '').gsub(/[\s]{2,}/, ' ').strip
 end
 
 def capitalize_every_third_word(block_string)
