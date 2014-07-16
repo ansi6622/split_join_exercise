@@ -18,7 +18,7 @@ def generate_an_array_of_teams(teams)
 end
 
 def number_of_teams(teams)
-
+  generate_an_array_of_teams(teams).count
 end
 
 def return_australia(teams)
