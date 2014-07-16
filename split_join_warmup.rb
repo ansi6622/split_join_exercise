@@ -34,7 +34,13 @@ def block_string_to_single_line(block_string)
 end
 
 def capitalize_every_third_word(block_string)
-
+  block_string_to_single_line(block_string).split(" ").map.with_index do |word, index|
+    if index % 3 == 0
+      word.capitalize
+    else
+      word.downcase
+    end
+  end.join(' ')
 end
 
 check("goal method", goal(goal_message) == "GOOOOOOOAL!!!!GOOOOOOOAL!!!!")
