@@ -22,7 +22,7 @@ def number_of_teams(teams)
 end
 
 def return_australia(teams)
-
+  generate_an_array_of_teams(teams).find { |i| i == 'Australia' }
 end
 
 def starts_with_C(teams)
